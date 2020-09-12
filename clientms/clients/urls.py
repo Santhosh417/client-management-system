@@ -1,5 +1,4 @@
 from django.urls import path
-from . import views
 from .views import (
     ClientListView,
     ClientUpdateView,
@@ -15,6 +14,6 @@ urlpatterns = [
     path('<int:pk>/delete/',
          ClientDeleteView.as_view(), name='client_delete'),
     path('new/', ClientCreateView.as_view(), name='client_new'),
-    path('', views.ClientListView.as_view(), name='client_list'),
+    path('', ClientListView.as_view(), name='client_list'),
 
 ]
