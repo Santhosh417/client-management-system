@@ -3,17 +3,17 @@ MSD Client management system assignment
 
 Steps for running locally:
 
-1. Go to client-management-system and create a virtual environment
+1. Go to `client-management-system` and create a virtual environment
    * Windows - `python -m virtualenv c:\path\to\venv`
    * MAC - `python3 -m virtualenv venv`
 2. Go to clientms and execute below command to install required softwares as specified in requirements.txt
   `pip  install -r requirements.txt`
 
-3. Go to client-management-system/venv/bin and activate virtual environment
+3. Go to `client-management-system/venv/bin` and activate virtual environment
    * Windows: `activate`
    * Mac: `source activate`
    
-4. Go to client-management-system/clientms folder where manage.py file exists and implement database changes:
+4. Go to `client-management-system/clientms` folder where manage.py file exists and implement database changes:
   * `python manage.py makemigrations`.  - this will create a view of database changes.
   * `python manage.py migrate`. - Makes database changes in the selected database as specified in clientms/settings.py
   
